@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 Generate the doudou Game
 */
 
@@ -47,18 +47,18 @@ void douProcess(int rowIn, int lineIn)	//this is used to handle things after Dad
 		printf("      ");											//space to adjust
 		for(line=1;line<=23;line++)									//show the up arrow
 		{
-			printf(" ¡ü");
+			printf(" â†‘");
 		}
 		printf("\n\n");
 //---------------------------------------------------------------
 		for(row=0;row<17;row++)										//row from up to down
 		{
-			printf("%2d¡û  |",row+1);								//print the row number
+			printf("%2dâ†  |",row+1);								//print the row number
 			for(line=0;line<23;line++)								//line from left to right
 			{
 				if(row==rowIn&&line==lineIn)
 				{
-					printf("¡ö|");
+					printf("â– |");
 					continue;
 				}
 				if(grid[row][line].isDisplay==COLOR_INVISIBLE)					//if undiplay, print space
@@ -100,7 +100,7 @@ void douClick(int row, int line)
 	colorLe=leftSe(&rowLe,&lineLe);									//left
 //----------------------------------------------------------------
 //----------------------------------------------------------------
-//----------------------------------------------------------------4 points gain¡ý
+//----------------------------------------------------------------4 points gainâ†“
 	if(colorUp==colorRi && colorRi==colorDo && colorDo==colorLe && colorUp!=COLOR_GEN_NONE)
 	{
 		grid[rowUp][lineUp].isDisplay=COLOR_INVISIBLE;
@@ -110,9 +110,9 @@ void douClick(int row, int line)
 		score+=4;
 		counted=1;
 	}
-//----------------------------------------------------------------4 points gain¡ü
+//----------------------------------------------------------------4 points gainâ†‘
 	if(counted==1)return;//if this click gain 4 points, there is no possibility to gain 3 or 2 points
-//----------------------------------------------------------------3 points gain¡ý
+//----------------------------------------------------------------3 points gainâ†“
 	if(colorUp==colorRi && colorRi==colorDo && colorUp!=COLOR_GEN_NONE)
 	{
 		grid[rowUp][lineUp].isDisplay=COLOR_INVISIBLE;
@@ -137,9 +137,9 @@ void douClick(int row, int line)
 		score+=3;
 		counted=1;
 	}
-//----------------------------------------------------------------3 points gain¡ü
+//----------------------------------------------------------------3 points gainâ†‘
 	if(counted==1)return;//if this click gain 3 points, there is no possibility to gain 2 points
-//----------------------------------------------------------------2 points gain¡ý
+//----------------------------------------------------------------2 points gainâ†“
 	if(colorUp==colorRi && colorUp!=COLOR_GEN_NONE)
 	{
 		grid[rowUp][lineUp].isDisplay=COLOR_INVISIBLE;
@@ -182,28 +182,28 @@ void douClick(int row, int line)
 		score+=2;
 		counted=1;
 	}
-//----------------------------------------------------------------2 points gain¡ü
-	//if(counted==1)return;		//return		//2014.03.13 ˆ÷ë Ÿo„¿¤Ë¤Ê¤ë
-	return;										//2014.03.13 ˆ÷ë ÐÂÒŽ¡¢return anyway
+//----------------------------------------------------------------2 points gainâ†‘
+	//if(counted==1)return;		//return		//2014.03.13 å¼µéºŸ ç„¡åŠ¹ã«ãªã‚‹
+	return;										//2014.03.13 å¼µéºŸ æ–°è¦ã€return anyway
 
 
 	/*					
 	4					
-	¡ü¡ú¡ý¡û			
+	â†‘â†’â†“â†			
 						
 	3					
-	¡ü¡ú¡ý				
-	¡ü¡ú¡û				
-	¡ü¡ý¡û				
-	¡ú¡ý¡û				
+	â†‘â†’â†“				
+	â†‘â†’â†				
+	â†‘â†“â†				
+	â†’â†“â†				
 						
 	2					
-	¡ü¡ú				
-	¡ü¡ý				
-	¡ü¡û				
-	¡ú¡ý				
-	¡ú¡û				
-	¡ý¡û				
+	â†‘â†’				
+	â†‘â†“				
+	â†‘â†				
+	â†’â†“				
+	â†’â†				
+	â†“â†				
 						
 	*/					
 }
@@ -339,14 +339,14 @@ void doudouInit()									//initial the game. show the first screen
 		printf("      ");											//space to adjust
 		for(line=1;line<=23;line++)									//show the up arrow
 		{
-			printf(" ¡ü");
+			printf(" â†‘");
 		}
 		printf("\n\n");
-//---------------------------------------------------------------first row¡ü
-//---------------------------------------------------------------other row¡ý
+//---------------------------------------------------------------first rowâ†‘
+//---------------------------------------------------------------other rowâ†“
 		for(row=0;row<17;row++)										//row from up to down
 		{
-			printf("%2d¡û  |",row+1);								//print the row number
+			printf("%2dâ†  |",row+1);								//print the row number
 			for(line=0;line<23;line++)								//line from left to right
 			{
 				if(grid[row][line].isDisplay==COLOR_INVISIBLE)					//if undiplay, print space
@@ -420,17 +420,17 @@ bool CheckColor(int color)									//check if the required color number is full
 
 
 /*
-line¡ú		LINE_MAX
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õrow
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡ý
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õROW_MAX
+lineâ†’		LINE_MAX
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡row
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â†“
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡ROW_MAX
 */
 
 

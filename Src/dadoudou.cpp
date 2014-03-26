@@ -50,9 +50,9 @@ void DaDouDou()										//plug-in Main process
 	
 	while(GameOverCheck())							//while not GameOverCheck, process
 	{	
-		for(row=0;row<ROW_MAX;row++)				//row scan    ¡ý
+		for(row=0;row<ROW_MAX;row++)				//row scan    â†“
 		{
-			for(line=0;line<LINE_MAX;line++)		//line scan   ¡ú
+			for(line=0;line<LINE_MAX;line++)		//line scan   â†’
 			{
 				color=GetColor(row,line);					//get the state information
 				if(color==COLOR_NONE)				//if no Doudou here, then judge Click or not
@@ -235,16 +235,16 @@ bool ColorCount(int color_up,int color_right,int color_down,int color_left)		//c
 
 
 /*
-line¡ú		LINE_MAX
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õrow
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡ý
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ
-¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õROW_MAX
+lineâ†’		LINE_MAX
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡row
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â†“
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡
+â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡â–¡ROW_MAX
 */
 
