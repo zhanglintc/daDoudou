@@ -1,4 +1,4 @@
-/********************************************************************************************
+﻿/********************************************************************************************
 																							*
 	This is the core Algorithm of the game DaDouDou's Plug-In gernerated by Lane.			*
 	For now, it is written by C language and can only show what I'm thinking about.			*
