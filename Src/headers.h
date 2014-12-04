@@ -10,19 +10,19 @@
 /*******************************************************************************/
 //defines
 /*******************************************************************************/
-#define MIN_WORD_LENGTH			0
-#define INPUT_STRING_LEN		300
-#define COMMAND_STR_LEN			100
-#define ERROR_MARK				-1
+#define MIN_WORD_LENGTH         0
+#define INPUT_STRING_LEN        300
+#define COMMAND_STR_LEN         100
+#define ERROR_MARK              -1
 
 
-#define ui_8					unsigned char
-#define si_8					signed char
-#define ui_16					unsigned int
-#define si_16					signed int
-#define uchar					unsigned char
-#define uint					unsigned int
-#define byte					unsigned char
+#define ui_8                    unsigned char
+#define si_8                    signed char
+#define ui_16                   unsigned int
+#define si_16                   signed int
+#define uchar                   unsigned char
+#define uint                    unsigned int
+#define byte                    unsigned char
 
 
 /*******************************************************************************/
@@ -30,10 +30,10 @@
 /*******************************************************************************/
 
 //-------------------------------------------------------------------------------------
-typedef struct
+typedef struct GRID
 {
-	int color;					//the color of the doudou
-	int isDisplay;				//1 for display, 0 for not display
+    int color;                  //the color of the doudou
+    int isDisplay;              //1 for display, 0 for not display
 }MAIN_GRID;
 //-------------------------------------------------------------------------------------
 
