@@ -85,27 +85,27 @@ LINK32=link.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\Src\affix.cpp
+SOURCE=..\src\affix.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Src\dadoudou.cpp
+SOURCE=..\src\dadoudou.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Src\doudouGen.cpp
+SOURCE=..\src\doudouGen.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Src\headers.h
+SOURCE=..\src\headers.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Src\SourceMain.cpp
+SOURCE=..\src\SourceMain.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Src\stdafx.h
+SOURCE=..\src\stdafx.h
 # End Source File
 # End Group
 # Begin Group "Header Files"
